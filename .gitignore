@@ -4,6 +4,7 @@ node_modules/
 .idea
 
 #Reports
+**/cucumber-json/
 **/reports/
 
 #Screenshots/Videos

@@ -1,10 +1,17 @@
 {
   "devDependencies": {
     "cypress": "^13.6.6",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.6.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "step_definitions": "cypress/e2e/step-definitions"
+    "step_definitions": "cypress/e2e/step-definitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }
